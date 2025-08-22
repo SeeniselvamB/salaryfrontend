@@ -1,0 +1,12 @@
+# Ignore backend folder completely
+../backend
+/backend
+backend
+
+# Common ignores
+node_modules
+npm-debug.log
+yarn-error.log
+.expo
+dist
+build
