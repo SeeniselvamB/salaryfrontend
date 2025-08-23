@@ -137,28 +137,29 @@ const DailyScreen = () => {
               <Text style={styles.resultTitle}>Financial Summary</Text>
               <Text style={styles.resultText}>
                 Today Total Income:{' '}
-                <Text style={styles.resultValue}>${results.gross}</Text>
+                <Text style={styles.resultValue}>{results.gross}</Text>
               </Text>
             </>
           )}
         </View>
       )}
-      <button
-  className="button calculate-button"
+      
+<TouchableOpacity
   style={{
     backgroundColor: '#e74c3c',
-    borderRadius: '10px',
-    padding: '12px',
-    color: '#fff',
-    fontWeight: 'bold',
-    fontSize: '16px',
+    borderRadius: 10,
+    padding: 12,
+    alignItems: 'center',
+    marginTop: 10,
     width: '100%',
-    marginTop: '10px'
   }}
-  onClick={resetAll}
+  onPress={resetAll}
 >
-  Reset
-</button>
+  <Text style={{ color: '#fff', fontWeight: 'bold', fontSize: 16 }}>
+    Reset
+  </Text>
+</TouchableOpacity>
+
     </ScrollView>
   );
   
